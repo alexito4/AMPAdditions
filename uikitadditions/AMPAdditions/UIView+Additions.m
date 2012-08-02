@@ -10,41 +10,49 @@
 
 @implementation UIView (AMPAdditions)
 
-- (CGPoint)position {
+- (CGPoint)position
+{
 	return self.frame.origin;
 }
 
-- (void)setPosition:(CGPoint)position {
+- (void)setPosition:(CGPoint)position
+{
 	CGRect rect = self.frame;
 	rect.origin = position;
 	[self setFrame:rect];
 }
 
-- (CGFloat)x {
+- (CGFloat)x
+{
 	return self.frame.origin.x;
 }
 
-- (void)setX:(CGFloat)x {
+- (void)setX:(CGFloat)x
+{
 	CGRect rect = self.frame;
 	rect.origin.x = x;
 	[self setFrame:rect];
 }
 
-- (CGFloat)y {
+- (CGFloat)y
+{
 	return self.frame.origin.y;
 }
 
-- (void)setY:(CGFloat)y {
+- (void)setY:(CGFloat)y
+{
 	CGRect rect = self.frame;
 	rect.origin.y = y;
 	[self setFrame:rect];
 }
 
-- (CGFloat)left {
+- (CGFloat)left
+{
     return  self.x;
 }
 
-- (void)setLeft:(CGFloat)left {
+- (void)setLeft:(CGFloat)left
+{
     [self setX:left];
 }
 
@@ -52,16 +60,19 @@
 	return self.x + self.width;
 }
 
-- (void)setRight:(CGFloat)right {
+- (void)setRight:(CGFloat)right
+{
 	CGFloat x = right - self.width;
     [self setX:x];
 }
 
-- (CGFloat)top {
+- (CGFloat)top
+{
     return self.y;
 }
 
-- (void)setTop:(CGFloat)top {
+- (void)setTop:(CGFloat)top
+{
     [self setY:top];
 }
 
@@ -69,56 +80,67 @@
     return self.y + self.height;
 }
 
-- (void)setBottom:(CGFloat)bottom {
+- (void)setBottom:(CGFloat)bottom
+{
     CGFloat y = bottom - self.height;
     [self setY:y];
 }
 
-- (CGFloat)centerX {
+- (CGFloat)centerX
+{
     return self.center.x;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setCenterX:(CGFloat)centerX
+{
     CGPoint center = self.center;
     center.x = centerX;
     [self setCenter:center];
 }
 
-- (CGFloat)centerY {
+- (CGFloat)centerY
+{
     return self.center.y;
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setCenterY:(CGFloat)centerY
+{
     CGPoint center = self.center;
     center.y = centerY;
     [self setCenter:center];
 }
 
-- (CGSize)size {
+- (CGSize)size
+{
 	return self.frame.size;
 }
 
-- (void)setSize:(CGSize)size {
+- (void)setSize:(CGSize)size
+{
 	CGRect rect = self.frame;
 	rect.size = size;
 	[self setFrame:rect];
 }
 
-- (CGFloat)width {
+- (CGFloat)width
+{
 	return self.frame.size.width;
 }
 
-- (void)setWidth:(CGFloat)width {
+- (void)setWidth:(CGFloat)width
+{
 	CGRect rect = self.frame;
 	rect.size.width = width;
 	[self setFrame:rect];
 }
 
-- (CGFloat)height {
+- (CGFloat)height
+{
 	return self.frame.size.height;
 }
 
-- (void)setHeight:(CGFloat)height {
+- (void)setHeight:(CGFloat)height
+{
 	CGRect rect = self.frame;
 	rect.size.height = height;
 	[self setFrame:rect];
