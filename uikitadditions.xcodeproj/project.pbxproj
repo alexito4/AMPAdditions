@@ -21,7 +21,7 @@
 		FACAF70915CACE9F001AEE42 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FACAF70815CACE9F001AEE42 /* second@2x.png */; };
 		FACAF70C15CACE9F001AEE42 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAF70A15CACE9F001AEE42 /* FirstViewController.xib */; };
 		FACAF70F15CACE9F001AEE42 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAF70D15CACE9F001AEE42 /* SecondViewController.xib */; };
-		FACAF71C15CACF33001AEE42 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF71B15CACF33001AEE42 /* UIView+Additions.m */; };
+		FACAF71C15CACF33001AEE42 /* UIView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */; };
 		FACAF72015CAD022001AEE42 /* UIColor+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -46,10 +46,11 @@
 		FACAF70815CACE9F001AEE42 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		FACAF70B15CACE9F001AEE42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		FACAF70E15CACE9F001AEE42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
-		FACAF71A15CACF33001AEE42 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		FACAF71B15CACF33001AEE42 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		FACAF71A15CACF33001AEE42 /* UIView+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AMPAdditions.h"; sourceTree = "<group>"; };
+		FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AMPAdditions.m"; sourceTree = "<group>"; };
 		FACAF71E15CAD022001AEE42 /* UIColor+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AMPAdditions.h"; sourceTree = "<group>"; };
 		FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AMPAdditions.m"; sourceTree = "<group>"; };
+		FACAF72115CAD436001AEE42 /* AMPAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPAdditions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +129,9 @@
 		FACAF71915CACF33001AEE42 /* AMPAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				FACAF71A15CACF33001AEE42 /* UIView+Additions.h */,
-				FACAF71B15CACF33001AEE42 /* UIView+Additions.m */,
+				FACAF72115CAD436001AEE42 /* AMPAdditions.h */,
+				FACAF71A15CACF33001AEE42 /* UIView+AMPAdditions.h */,
+				FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */,
 				FACAF71E15CAD022001AEE42 /* UIColor+AMPAdditions.h */,
 				FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */,
 			);
@@ -208,7 +210,7 @@
 				FACAF6FB15CACE9F001AEE42 /* AppDelegate.m in Sources */,
 				FACAF6FE15CACE9F001AEE42 /* FirstViewController.m in Sources */,
 				FACAF70515CACE9F001AEE42 /* SecondViewController.m in Sources */,
-				FACAF71C15CACF33001AEE42 /* UIView+Additions.m in Sources */,
+				FACAF71C15CACF33001AEE42 /* UIView+AMPAdditions.m in Sources */,
 				FACAF72015CAD022001AEE42 /* UIColor+AMPAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

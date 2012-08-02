@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Alejandro Martínez. All rights reserved.
 //
 
-#import "UIView+Additions.h"
+#import "UIView+AMPAdditions.h"
 
 @implementation UIView (AMPAdditions)
 

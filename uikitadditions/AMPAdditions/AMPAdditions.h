@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Alejandro Martinez. All rights reserved.
 //
 
-#ifndef uikitadditions_AMPAdditions_h
-#define uikitadditions_AMPAdditions_h
+#ifdef __OBJC__
 
-
+#import "UIView+AMPAdditions.h"
+#import "UIColor+AMPAdditions.h"
 
 #endif
