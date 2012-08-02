@@ -1,0 +1,23 @@
+//
+//  NSArray+AMPAdditions.h
+//  uikitadditions
+//
+//  Created by Alejandro Martinez on 02/08/12.
+//  Copyright (c) 2012 Alejandro Martinez. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSArray (AMPAdditions)
+
+/**
+ * Returns the first object in the array or nil.
+ */
+- (id)firstObject;
+
+/**
+ * Returns a NSMutableArray with the same content of the original array.
+ */
+- (NSMutableArray *)mutableArray;
+
+@end

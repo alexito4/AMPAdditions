@@ -14,9 +14,9 @@
 @property CGPoint position;
 @property CGFloat x;
 @property CGFloat y;
-@property CGFloat left;
+@property CGFloat left; // = x
 @property CGFloat right;
-@property CGFloat top;
+@property CGFloat top; // = y
 @property CGFloat bottom;
 
 @property CGFloat centerX;

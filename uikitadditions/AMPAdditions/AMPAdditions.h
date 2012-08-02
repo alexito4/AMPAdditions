@@ -11,4 +11,6 @@
 #import "UIView+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
 
+#import "NSArray+AMPAdditions.h"
+
 #endif

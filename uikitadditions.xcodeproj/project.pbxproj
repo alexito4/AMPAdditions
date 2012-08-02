@@ -23,6 +23,7 @@
 		FACAF70F15CACE9F001AEE42 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAF70D15CACE9F001AEE42 /* SecondViewController.xib */; };
 		FACAF71C15CACF33001AEE42 /* UIView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */; };
 		FACAF72015CAD022001AEE42 /* UIColor+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */; };
+		FACAF74015CAD6F4001AEE42 /* NSArray+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAF73F15CAD6F4001AEE42 /* NSArray+AMPAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		FACAF71E15CAD022001AEE42 /* UIColor+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AMPAdditions.h"; sourceTree = "<group>"; };
 		FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AMPAdditions.m"; sourceTree = "<group>"; };
 		FACAF72115CAD436001AEE42 /* AMPAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPAdditions.h; sourceTree = "<group>"; };
+		FACAF73E15CAD6F4001AEE42 /* NSArray+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+AMPAdditions.h"; sourceTree = "<group>"; };
+		FACAF73F15CAD6F4001AEE42 /* NSArray+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AMPAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */,
 				FACAF71E15CAD022001AEE42 /* UIColor+AMPAdditions.h */,
 				FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */,
+				FACAF73E15CAD6F4001AEE42 /* NSArray+AMPAdditions.h */,
+				FACAF73F15CAD6F4001AEE42 /* NSArray+AMPAdditions.m */,
 			);
 			path = AMPAdditions;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				FACAF70515CACE9F001AEE42 /* SecondViewController.m in Sources */,
 				FACAF71C15CACF33001AEE42 /* UIView+AMPAdditions.m in Sources */,
 				FACAF72015CAD022001AEE42 /* UIColor+AMPAdditions.m in Sources */,
+				FACAF74015CAD6F4001AEE42 /* NSArray+AMPAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
