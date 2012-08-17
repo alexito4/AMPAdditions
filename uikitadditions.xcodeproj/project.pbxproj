@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA28BA0715DE7C5E00847479 /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */; };
 		FACAF6EB15CACE9F001AEE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EA15CACE9F001AEE42 /* UIKit.framework */; };
 		FACAF6ED15CACE9F001AEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EC15CACE9F001AEE42 /* Foundation.framework */; };
 		FACAF6EF15CACE9F001AEE42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EE15CACE9F001AEE42 /* CoreGraphics.framework */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA28B9F715DE7C5E00847479 /* UIWebView+RemoveShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+RemoveShadow.h"; sourceTree = "<group>"; };
+		FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+RemoveShadow.m"; sourceTree = "<group>"; };
 		FACAF6E615CACE9F001AEE42 /* uikitadditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikitadditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACAF6EA15CACE9F001AEE42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FACAF6EC15CACE9F001AEE42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA28B9E315DE7C5E00847479 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				FA28B9E415DE7C5E00847479 /* UIWebView-RemoveShadow */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		FA28B9E415DE7C5E00847479 /* UIWebView-RemoveShadow */ = {
+			isa = PBXGroup;
+			children = (
+				FA28B9F715DE7C5E00847479 /* UIWebView+RemoveShadow.h */,
+				FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */,
+			);
+			path = "UIWebView-RemoveShadow";
+			sourceTree = "<group>";
+		};
 		FACAF6DB15CACE9E001AEE42 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +152,7 @@
 		FACAF71915CACF33001AEE42 /* AMPAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				FA28B9E315DE7C5E00847479 /* vendor */,
 				FACAF72115CAD436001AEE42 /* AMPAdditions.h */,
 				FACAF71A15CACF33001AEE42 /* UIView+AMPAdditions.h */,
 				FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */,
@@ -218,6 +239,7 @@
 				FACAF71C15CACF33001AEE42 /* UIView+AMPAdditions.m in Sources */,
 				FACAF72015CAD022001AEE42 /* UIColor+AMPAdditions.m in Sources */,
 				FACAF74015CAD6F4001AEE42 /* NSArray+AMPAdditions.m in Sources */,
+				FA28BA0715DE7C5E00847479 /* UIWebView+RemoveShadow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
