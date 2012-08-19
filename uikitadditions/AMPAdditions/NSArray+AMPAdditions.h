@@ -20,4 +20,16 @@
  */
 - (NSMutableArray *)mutableArray;
 
+/**
+ * Returns an NSArray with the same elements in reverse order.
+ */
+- (NSArray *)reversedArray;
+@end
+
+@interface NSMutableArray (AMPAdditions)
+/**
+ * Reverse the order of the objects.
+ */
+- (void)reverse;
+
 @end
