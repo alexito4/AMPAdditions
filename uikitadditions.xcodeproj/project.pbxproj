@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA28BA0715DE7C5E00847479 /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */; };
+		FA46D0B515EAB1FB002F2522 /* UINavigationController+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */; };
 		FACAF6EB15CACE9F001AEE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EA15CACE9F001AEE42 /* UIKit.framework */; };
 		FACAF6ED15CACE9F001AEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EC15CACE9F001AEE42 /* Foundation.framework */; };
 		FACAF6EF15CACE9F001AEE42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EE15CACE9F001AEE42 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		FA28B9F715DE7C5E00847479 /* UIWebView+RemoveShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+RemoveShadow.h"; sourceTree = "<group>"; };
 		FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+RemoveShadow.m"; sourceTree = "<group>"; };
+		FA46D0B315EAB1FB002F2522 /* UINavigationController+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AMPAdditions.h"; sourceTree = "<group>"; };
+		FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AMPAdditions.m"; sourceTree = "<group>"; };
 		FACAF6E615CACE9F001AEE42 /* uikitadditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikitadditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACAF6EA15CACE9F001AEE42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FACAF6EC15CACE9F001AEE42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				FACAF71F15CAD022001AEE42 /* UIColor+AMPAdditions.m */,
 				FACAF73E15CAD6F4001AEE42 /* NSArray+AMPAdditions.h */,
 				FACAF73F15CAD6F4001AEE42 /* NSArray+AMPAdditions.m */,
+				FA46D0B315EAB1FB002F2522 /* UINavigationController+AMPAdditions.h */,
+				FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */,
 			);
 			path = AMPAdditions;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				FACAF74015CAD6F4001AEE42 /* NSArray+AMPAdditions.m in Sources */,
 				FA28BA0715DE7C5E00847479 /* UIWebView+RemoveShadow.m in Sources */,
 				FAD1971815DE80E40039C789 /* FirstViewController.m in Sources */,
+				FA46D0B515EAB1FB002F2522 /* UINavigationController+AMPAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
