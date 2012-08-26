@@ -9,6 +9,7 @@
 #ifdef __OBJC__
 
 #import "UIWebView+RemoveShadow.h"
+#import "NSDate-Utilities.h"
 
 #import "UIView+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
