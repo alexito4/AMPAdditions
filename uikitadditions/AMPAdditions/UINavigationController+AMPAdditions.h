@@ -10,6 +10,9 @@
 
 @interface UINavigationController (AMPAdditions)
 
+/**
+ * Returns view controllar at index 0.
+ */
 - (UIViewController *)rootViewController;
 
 @end

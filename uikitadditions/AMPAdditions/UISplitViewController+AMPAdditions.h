@@ -10,7 +10,14 @@
 
 @interface UISplitViewController (AMPAdditions)
 
+/**
+ * Returns view controllar at index 0. (left view controller)
+ */
 - (UIViewController *)masterViewController;
+
+/**
+ * Returns view controllar at index 1. (right view controller)
+ */
 - (UIViewController *)detailViewController;
 
 @end
