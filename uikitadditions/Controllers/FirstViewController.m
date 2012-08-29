@@ -41,4 +41,14 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+#pragma mark -
+
+- (IBAction)testAlertViewBlocks:(id)sender {
+    [UIAlertView showAlertWithTitle:@"UIAlertView" message:@"With blocks!" completionBlock:^(NSUInteger indexButton)
+    {
+        NSLog(@"Dismissed with button %i", indexButton);
+        
+    } cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", @"Cool", @"Fine", nil];
+}
+
 @end

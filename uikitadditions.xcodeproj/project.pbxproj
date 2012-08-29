@@ -10,6 +10,8 @@
 		FA28BA0715DE7C5E00847479 /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */; };
 		FA46D0B515EAB1FB002F2522 /* UINavigationController+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */; };
 		FA46D0B915EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA46D0B815EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m */; };
+		FAAE50A115EE709600704250 /* UIAlertView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE50A015EE709600704250 /* UIAlertView+AMPAdditions.m */; };
+		FAAE50AD15EE759800704250 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE50AA15EE759800704250 /* NSDate-Utilities.m */; };
 		FACAF6EB15CACE9F001AEE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EA15CACE9F001AEE42 /* UIKit.framework */; };
 		FACAF6ED15CACE9F001AEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EC15CACE9F001AEE42 /* Foundation.framework */; };
 		FACAF6EF15CACE9F001AEE42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EE15CACE9F001AEE42 /* CoreGraphics.framework */; };
@@ -32,6 +34,10 @@
 		FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AMPAdditions.m"; sourceTree = "<group>"; };
 		FA46D0B715EAB2C6002F2522 /* UISplitViewController+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+AMPAdditions.h"; sourceTree = "<group>"; };
 		FA46D0B815EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+AMPAdditions.m"; sourceTree = "<group>"; };
+		FAAE509F15EE709600704250 /* UIAlertView+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AMPAdditions.h"; path = "uikitadditions/AMPAdditions/UIAlertView+AMPAdditions.h"; sourceTree = SOURCE_ROOT; };
+		FAAE50A015EE709600704250 /* UIAlertView+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AMPAdditions.m"; path = "uikitadditions/AMPAdditions/UIAlertView+AMPAdditions.m"; sourceTree = SOURCE_ROOT; };
+		FAAE50A915EE759800704250 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-Utilities.h"; sourceTree = "<group>"; };
+		FAAE50AA15EE759800704250 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Utilities.m"; sourceTree = "<group>"; };
 		FACAF6E615CACE9F001AEE42 /* uikitadditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikitadditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACAF6EA15CACE9F001AEE42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FACAF6EC15CACE9F001AEE42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +79,7 @@
 		FA28B9E315DE7C5E00847479 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
+				FAAE50A715EE759800704250 /* NSDate-Extensions */,
 				FA28B9E415DE7C5E00847479 /* UIWebView-RemoveShadow */,
 			);
 			path = vendor;
@@ -85,6 +92,15 @@
 				FA28B9F815DE7C5E00847479 /* UIWebView+RemoveShadow.m */,
 			);
 			path = "UIWebView-RemoveShadow";
+			sourceTree = "<group>";
+		};
+		FAAE50A715EE759800704250 /* NSDate-Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE50A915EE759800704250 /* NSDate-Utilities.h */,
+				FAAE50AA15EE759800704250 /* NSDate-Utilities.m */,
+			);
+			path = "NSDate-Extensions";
 			sourceTree = "<group>";
 		};
 		FACAF6DB15CACE9E001AEE42 = {
@@ -152,6 +168,8 @@
 				FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */,
 				FA46D0B715EAB2C6002F2522 /* UISplitViewController+AMPAdditions.h */,
 				FA46D0B815EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m */,
+				FAAE509F15EE709600704250 /* UIAlertView+AMPAdditions.h */,
+				FAAE50A015EE709600704250 /* UIAlertView+AMPAdditions.m */,
 			);
 			path = AMPAdditions;
 			sourceTree = "<group>";
@@ -242,6 +260,8 @@
 				FAD1971815DE80E40039C789 /* FirstViewController.m in Sources */,
 				FA46D0B515EAB1FB002F2522 /* UINavigationController+AMPAdditions.m in Sources */,
 				FA46D0B915EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m in Sources */,
+				FAAE50A115EE709600704250 /* UIAlertView+AMPAdditions.m in Sources */,
+				FAAE50AD15EE759800704250 /* NSDate-Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

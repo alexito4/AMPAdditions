@@ -8,12 +8,16 @@
 
 #ifdef __OBJC__
 
+// Vendor
 #import "UIWebView+RemoveShadow.h"
 #import "NSDate-Utilities.h"
 
+// UI
 #import "UIView+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
+#import "UIAlertView+AMPAdditions.h"
 
+// NS
 #import "NSArray+AMPAdditions.h"
 
 #endif
