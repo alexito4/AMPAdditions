@@ -14,6 +14,7 @@
 
 // UI
 #import "UIView+AMPAdditions.h"
+#import "UIImageView+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
 #import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"
