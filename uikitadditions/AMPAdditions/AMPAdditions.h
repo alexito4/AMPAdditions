@@ -16,6 +16,7 @@
 #import "UIView+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
 #import "UIAlertView+AMPAdditions.h"
+#import "UIApplication+AMPAdditions.h"
 
 // NS
 #import "NSArray+AMPAdditions.h"
