@@ -22,7 +22,7 @@
     containerLayer.shadowColor = [UIColor randomColor].CGColor;
     containerLayer.shadowRadius = 2.0f;
     containerLayer.shadowOffset = CGSizeMake(0.0f, 0.0f);
-    containerLayer.shadowOpacity = 0.6f;
+    containerLayer.shadowOpacity = 0.8f;
     
     // use the image's layer to mask the image into a circle
     copy.layer.cornerRadius = roundf(copy.frame.size.width/2.0);
