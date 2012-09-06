@@ -19,6 +19,8 @@
 #import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"
 
+#import "MKMapView+AMPAdditions.h"
+
 // NS
 #import "NSArray+AMPAdditions.h"
 
