@@ -11,7 +11,7 @@
 @implementation UINavigationController (AMPAdditions)
 
 - (UIViewController *)rootViewController {
-    return [[self viewControllers] objectAtIndex:0];
+    return [self viewControllers][0];
 }
 
 @end

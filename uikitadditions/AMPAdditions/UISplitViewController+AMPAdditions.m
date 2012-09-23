@@ -11,11 +11,11 @@
 @implementation UISplitViewController (AMPAdditions)
 
 - (UIViewController *)masterViewController {
-    return [self.viewControllers objectAtIndex:0];
+    return (self.viewControllers)[0];
 }
 
 - (UIViewController *)detailViewController {
-    return [self.viewControllers objectAtIndex:1];
+    return (self.viewControllers)[1];
 }
 
 @end

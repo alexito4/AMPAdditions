@@ -12,7 +12,7 @@
 
 - (id)firstObject
 {
-    return [self count] > 0 ? [self objectAtIndex:0] : nil;
+    return [self count] > 0 ? self[0] : nil;
 }
 
 - (NSMutableArray *)mutableArray
