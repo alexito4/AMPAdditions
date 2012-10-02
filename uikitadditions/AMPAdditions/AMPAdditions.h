@@ -18,6 +18,8 @@
 #import "UIColor+AMPAdditions.h"
 #import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"
+#import "UIAlertView+AMPAdditions.h"
+#import "UIActionSheet+AMPAdditions.h"
 
 #import "MKMapView+AMPAdditions.h"
 
