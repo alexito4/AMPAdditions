@@ -11,7 +11,6 @@
 // Vendor
 #import "UIWebView+RemoveShadow.h"
 #import "NSDate-Utilities.h"
-#import "UIImage+Resize.h"
 
 // UI
 #import "UIView+AMPAdditions.h"
