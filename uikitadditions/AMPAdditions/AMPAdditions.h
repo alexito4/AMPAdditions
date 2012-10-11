@@ -25,6 +25,7 @@
 #import "MKMapView+AMPAdditions.h"
 
 // NS
+#import "NSObject+AMPAdditions.h"
 #import "NSArray+AMPAdditions.h"
 
 #endif

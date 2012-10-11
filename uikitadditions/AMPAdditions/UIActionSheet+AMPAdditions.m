@@ -7,6 +7,7 @@
 //
 
 #import "UIActionSheet+AMPAdditions.h"
+#import <objc/runtime.h>
 
 @implementation UIActionSheet (AMPAdditions)
 /*
