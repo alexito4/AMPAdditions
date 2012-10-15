@@ -14,4 +14,6 @@
 - (void)centerToCoordinates:(CLLocationCoordinate2D)coordinates;
 - (void)centerToCoordinates:(CLLocationCoordinate2D)coordinates withSpanValue:(CGFloat)span animated:(BOOL)animated;
 
+- (void)centerToFitAllAnnotations;
+
 @end
