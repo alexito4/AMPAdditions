@@ -10,6 +10,8 @@
 
 @interface UIView (AMPAdditions)
 
+- (void)removeAllSubviews;
+
 // Frame manipulation
 @property CGPoint position;
 @property CGFloat x;

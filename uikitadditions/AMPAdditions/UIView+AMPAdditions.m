@@ -10,6 +10,14 @@
 
 @implementation UIView (AMPAdditions)
 
+- (void)removeAllSubviews {
+    for (UIView *subview in [self subviews]) {
+        [subview removeFromSuperview];
+    }
+}
+
+#pragma mark - Frame manipulation
+
 - (CGPoint)position
 {
 	return self.frame.origin;
