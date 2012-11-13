@@ -10,9 +10,13 @@
 
 @interface MKMapView (AMPAdditions)
 
-- (void)centerToCoordinates:(CLLocationCoordinate2D)coordinates withSpanValue:(CGFloat)span;
-- (void)centerToCoordinates:(CLLocationCoordinate2D)coordinates;
-- (void)centerToCoordinates:(CLLocationCoordinate2D)coordinates withSpanValue:(CGFloat)span animated:(BOOL)animated;
+- (void)centerToCoordinate:(CLLocationCoordinate2D)coordinate withSpanValue:(CGFloat)span;
+- (void)centerToCoordinate:(CLLocationCoordinate2D)coordinate;
+- (void)centerToCoordinate:(CLLocationCoordinate2D)coordinate withSpanValue:(CGFloat)span animated:(BOOL)animated;
+
+- (void)centerToCoordinates:(NSArray *)coordinates;
+
+- (void)centerToUserLocation;
 
 - (void)centerToFitAllAnnotations;
 

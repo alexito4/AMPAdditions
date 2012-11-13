@@ -7,6 +7,8 @@
 //
 
 #import "UIImageView+AMPAdditions.h"
+#import <CoreImage/CoreImage.h>
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIImageView (AMPAdditions)
 
@@ -41,6 +43,23 @@
     self.image = nil;
     self.highlightedImage = nil;
     [self.layer addSublayer:containerLayer];
+}
+
+- (void)makeBlackAndWhite {
+    CIImage *beginImage = [CIImage imageWithCGImage:self.image.CGImage];
+    
+    CIImage *blackAndWhite = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:
+                              kCIInputImageKey, beginImage,
+                              @"inputColor", [CIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0],
+                              @"inputIntensity", [NSNumber numberWithFloat:1.0],
+                              nil].outputImage;
+    
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef cgiimage = [context createCGImage:blackAndWhite fromRect:blackAndWhite.extent];
+    UIImage *newImage = [UIImage imageWithCGImage:cgiimage];
+    CGImageRelease(cgiimage);
+    
+    [self setImage:newImage];
 }
 
 @end

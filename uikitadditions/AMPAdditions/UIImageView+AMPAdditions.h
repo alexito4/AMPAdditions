@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 
 @interface UIImageView (AMPAdditions)
 
 - (void)makeCircle;
 - (void)makeCircleAndShadow;
+
+- (void)makeBlackAndWhite;
 
 @end
