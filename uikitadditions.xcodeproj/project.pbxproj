@@ -10,6 +10,7 @@
 		FA1C42F3162C919C00B49B58 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA1C42F2162C919C00B49B58 /* README.md */; };
 		FA20FA2916666D4C0063463D /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20FA2616666D4C0063463D /* NSDate-Utilities.m */; };
 		FA20FA2A16666D4C0063463D /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20FA2816666D4C0063463D /* UIWebView+RemoveShadow.m */; };
+		FA20FA2D166674160063463D /* UITableView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20FA2C166674160063463D /* UITableView+AMPAdditions.m */; };
 		FA3110E41627651700015763 /* MKMapView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3110DB1627651700015763 /* MKMapView+AMPAdditions.m */; };
 		FA3110E51627651700015763 /* UIActionSheet+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3110DD1627651700015763 /* UIActionSheet+AMPAdditions.m */; };
 		FA3110E61627651700015763 /* UIApplication+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3110DF1627651700015763 /* UIApplication+AMPAdditions.m */; };
@@ -44,6 +45,8 @@
 		FA20FA2616666D4C0063463D /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Utilities.m"; sourceTree = "<group>"; };
 		FA20FA2716666D4C0063463D /* UIWebView+RemoveShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+RemoveShadow.h"; sourceTree = "<group>"; };
 		FA20FA2816666D4C0063463D /* UIWebView+RemoveShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+RemoveShadow.m"; sourceTree = "<group>"; };
+		FA20FA2B166674160063463D /* UITableView+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AMPAdditions.h"; sourceTree = "<group>"; };
+		FA20FA2C166674160063463D /* UITableView+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AMPAdditions.m"; sourceTree = "<group>"; };
 		FA3110DA1627651700015763 /* MKMapView+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+AMPAdditions.h"; sourceTree = "<group>"; };
 		FA3110DB1627651700015763 /* MKMapView+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+AMPAdditions.m"; sourceTree = "<group>"; };
 		FA3110DC1627651700015763 /* UIActionSheet+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+AMPAdditions.h"; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				FA46D0B415EAB1FB002F2522 /* UINavigationController+AMPAdditions.m */,
 				FA46D0B715EAB2C6002F2522 /* UISplitViewController+AMPAdditions.h */,
 				FA46D0B815EAB2C6002F2522 /* UISplitViewController+AMPAdditions.m */,
+				FA20FA2B166674160063463D /* UITableView+AMPAdditions.h */,
+				FA20FA2C166674160063463D /* UITableView+AMPAdditions.m */,
 				FACAF71A15CACF33001AEE42 /* UIView+AMPAdditions.h */,
 				FACAF71B15CACF33001AEE42 /* UIView+AMPAdditions.m */,
 				FA28B9E315DE7C5E00847479 /* vendor */,
@@ -304,6 +309,7 @@
 				FA9DEC161664C9F100CCD396 /* UIFont+AMPAdditions.m in Sources */,
 				FA20FA2916666D4C0063463D /* NSDate-Utilities.m in Sources */,
 				FA20FA2A16666D4C0063463D /* UIWebView+RemoveShadow.m in Sources */,
+				FA20FA2D166674160063463D /* UITableView+AMPAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
