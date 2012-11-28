@@ -12,3 +12,25 @@ AMPAddiions bring to you some categories for improve the iOS Development.
 
 - MapKit.framework
 - QuartzCore.framework
+
+## Additions
+
+- MKMapView
+- NSArray
+- NSObject
+- UIActionSheet
+- UIAlertView
+- UIApplication
+- UIColor
+- UIDevice
+- UIFont
+- UIImageView
+- UINavigationController
+- UISplitViewController
+- UIView
+
+
+## In vendor
+
+- NSDate-Extensions | Erica Sadun | https://github.com/erica/NSDate-Extensions
+- UIWebView-RemoveShadow | Mark Rickert | https://github.com/markrickert/UIWebView-RemoveShadow
