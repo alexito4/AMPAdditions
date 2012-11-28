@@ -1,6 +1,0 @@
-[submodule "uikitadditions/AMPAdditions/vendor/UIWebView-RemoveShadow"]
-	path = uikitadditions/AMPAdditions/vendor/UIWebView-RemoveShadow
-	url = git://github.com/markrickert/UIWebView-RemoveShadow.git
-[submodule "uikitadditions/AMPAdditions/vendor/NSDate-Extensions"]
-	path = uikitadditions/AMPAdditions/vendor/NSDate-Extensions
-	url = https://github.com/erica/NSDate-Extensions.git

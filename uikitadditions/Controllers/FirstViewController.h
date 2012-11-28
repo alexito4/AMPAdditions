@@ -12,4 +12,5 @@
 
 - (IBAction)testAlertViewBlocks:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end
