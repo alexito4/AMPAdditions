@@ -1,8 +1,8 @@
-## UIKit-AMPAdditions
+# UIKit-AMPAdditions
 
 AMPAddiions bring to you some categories for improve the iOS Development.
 
-## Usage
+# Usage
 
 1. Add the AMPAdditions folder to your project.
 
@@ -12,8 +12,10 @@ AMPAddiions bring to you some categories for improve the iOS Development.
 
 - MapKit.framework
 - QuartzCore.framework
+- CoreImage.framework
+- CoreGraphics.framework
 
-## Additions
+# Additions
 
 - MKMapView
 - NSArray
@@ -30,7 +32,20 @@ AMPAddiions bring to you some categories for improve the iOS Development.
 - UIView
 
 
-## In vendor
+# In vendor
 
 - NSDate-Extensions | Erica Sadun | https://github.com/erica/NSDate-Extensions
 - UIWebView-RemoveShadow | Mark Rickert | https://github.com/markrickert/UIWebView-RemoveShadow
+
+
+# Usefule Macros
+*Included Macros from my project SupportMacros https://github.com/alexito4/SupportMacros*
+
+## Compare System Versions
+There are some useful macros for comparing system version.
+
+if (SYSTEM_VERSION_LESS_THAN(@"6.0")) {
+    // ...
+}
+
+See the rest in the AMPMacros.h file.
