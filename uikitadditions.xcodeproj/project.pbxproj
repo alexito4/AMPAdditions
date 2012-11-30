@@ -24,6 +24,7 @@
 		FA9DEC161664C9F100CCD396 /* UIFont+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9DEC151664C9F100CCD396 /* UIFont+AMPAdditions.m */; };
 		FAAC6A70165CC474004B3170 /* flower.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FAAC6A6F165CC474004B3170 /* flower.jpeg */; };
 		FAAE50A115EE709600704250 /* UIAlertView+AMPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE50A015EE709600704250 /* UIAlertView+AMPAdditions.m */; };
+		FABD993316692A9A00F5DCAE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABD993216692A9A00F5DCAE /* CoreImage.framework */; };
 		FACAF6EB15CACE9F001AEE42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EA15CACE9F001AEE42 /* UIKit.framework */; };
 		FACAF6ED15CACE9F001AEE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EC15CACE9F001AEE42 /* Foundation.framework */; };
 		FACAF6EF15CACE9F001AEE42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAF6EE15CACE9F001AEE42 /* CoreGraphics.framework */; };
@@ -70,6 +71,8 @@
 		FAAC6A6F165CC474004B3170 /* flower.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpeg; sourceTree = "<group>"; };
 		FAAE509F15EE709600704250 /* UIAlertView+AMPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AMPAdditions.h"; path = "uikitadditions/AMPAdditions/UIAlertView+AMPAdditions.h"; sourceTree = SOURCE_ROOT; };
 		FAAE50A015EE709600704250 /* UIAlertView+AMPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AMPAdditions.m"; path = "uikitadditions/AMPAdditions/UIAlertView+AMPAdditions.m"; sourceTree = SOURCE_ROOT; };
+		FABD993216692A9A00F5DCAE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		FABD993516692B8D00F5DCAE /* AMPMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPMacros.h; sourceTree = "<group>"; };
 		FACAF6E615CACE9F001AEE42 /* uikitadditions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikitadditions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACAF6EA15CACE9F001AEE42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FACAF6EC15CACE9F001AEE42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABD993316692A9A00F5DCAE /* CoreImage.framework in Frameworks */,
 				FA3110EF1627664200015763 /* MapKit.framework in Frameworks */,
 				FA3110ED1627663200015763 /* QuartzCore.framework in Frameworks */,
 				FACAF6EB15CACE9F001AEE42 /* UIKit.framework in Frameworks */,
@@ -141,6 +145,7 @@
 		FACAF6E915CACE9F001AEE42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FABD993216692A9A00F5DCAE /* CoreImage.framework */,
 				FA3110EE1627664200015763 /* MapKit.framework */,
 				FA3110EC1627663200015763 /* QuartzCore.framework */,
 				FACAF6EA15CACE9F001AEE42 /* UIKit.framework */,
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				FACAF72115CAD436001AEE42 /* AMPAdditions.h */,
+				FABD993516692B8D00F5DCAE /* AMPMacros.h */,
 				FA3110DA1627651700015763 /* MKMapView+AMPAdditions.h */,
 				FA3110DB1627651700015763 /* MKMapView+AMPAdditions.m */,
 				FACAF73E15CAD6F4001AEE42 /* NSArray+AMPAdditions.h */,

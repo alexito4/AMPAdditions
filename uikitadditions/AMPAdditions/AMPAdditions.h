@@ -8,6 +8,9 @@
 
 #ifdef __OBJC__
 
+// Macros (radians, system version...)
+#import "AMPMacros.h"
+
 // Vendor
 #import "UIWebView+RemoveShadow.h"
 #import "NSDate-Utilities.h"
