@@ -1,4 +1,4 @@
-# UIKit-AMPAdditions
+## UIKit-AMPAdditions
 
 AMPAddiions bring to you some categories for improve the iOS Development.
 
@@ -41,11 +41,11 @@ AMPAddiions bring to you some categories for improve the iOS Development.
 # Useful Macros
 *Included Macros from my project SupportMacros https://github.com/alexito4/SupportMacros*
 
-## Compare System Versions
+# Compare System Versions
 There are some useful macros for comparing system version.
 
-if (SYSTEM_VERSION_LESS_THAN(@"6.0")) {
-    // ...
-}
+    if (SYSTEM_VERSION_LESS_THAN(@"6.0")) {
+        // ...
+    }
 
 See the rest in the AMPMacros.h file.
