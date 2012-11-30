@@ -38,7 +38,7 @@ AMPAddiions bring to you some categories for improve the iOS Development.
 - UIWebView-RemoveShadow | Mark Rickert | https://github.com/markrickert/UIWebView-RemoveShadow
 
 
-# Usefule Macros
+# Useful Macros
 *Included Macros from my project SupportMacros https://github.com/alexito4/SupportMacros*
 
 ## Compare System Versions
