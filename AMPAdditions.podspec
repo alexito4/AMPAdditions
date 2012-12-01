@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   s.source   = { 
   	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git', 
   	#:tag => '0.9' 
-  	:commit => 'fe4e910cb3b21d39c05de4509774f6b818f253ab'
+  	:commit => 'ba32e99a2221e3a153c7148972febf4581855010'
   }
   s.platform = :ios
-  s.source_files = 'AMPAdditions/', 'AMPAdditions/vendor/'
+  s.source_files = 'AMPAdditions/'
   s.requires_arc = true
 
   #s.framework = 'SystemConfiguration'
