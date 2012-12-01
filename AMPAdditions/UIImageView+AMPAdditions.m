@@ -7,6 +7,7 @@
 //
 
 #import "UIImageView+AMPAdditions.h"
+#import "UIColor+AMPAdditions.h"
 #import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 
