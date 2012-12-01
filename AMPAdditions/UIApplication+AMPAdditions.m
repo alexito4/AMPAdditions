@@ -7,13 +7,8 @@
 //
 
 #import "UIApplication+AMPAdditions.h"
-#import "AppDelegate.h"
 
 @implementation UIApplication (AMPAdditions)
-
-//+ (id<UIApplicationDelegate>)sharedInstance {
-//    return (id<UIApplicationDelegate>)[[UIApplication sharedApplication] delegate];
-//}
 
 + (void)startActivityIndicator {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
