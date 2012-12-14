@@ -12,4 +12,6 @@
 
 - (void)deselectSelectedRow;
 
+- (CGFloat)heightForSection:(NSInteger)section;;
+
 @end
