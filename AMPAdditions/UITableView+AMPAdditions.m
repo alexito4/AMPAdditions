@@ -18,4 +18,20 @@
     [self deselectRowAtIndexPath:[self indexPathForSelectedRow] animated:animated];
 }
 
+- (CGFloat)heightForSection:(NSInteger)section {
+    return [self rectForSection:section].size.height;
+}
+
+- (CGSize)totalSize {
+    CGFloat height = 0;
+    CGFloat width = 0;
+    NSInteger sections = [self numberOfSections];
+    for (int i = 0; i < sections; i++) {
+        CGSize size = [self rectForSection:i].size;
+        height += size.height;
+        width += size.width;
+    }
+    return CGSizeMake(width, height);
+}
+
 @end
