@@ -1,6 +1,6 @@
 //
 //  MKMapView+AMPAdditions.m
-//  walipa
+//   
 //
 //  Created by Alejandro Martinez on 05/09/12.
 //  Copyright (c) 2012 Alejandro Martinez. All rights reserved.

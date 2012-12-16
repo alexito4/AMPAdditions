@@ -1,6 +1,6 @@
 //
 //  UIApplication+AMPAdditions.h
-//  walipa
+//   
 //
 //  Created by Alejandro Martinez on 30/08/12.
 //  Copyright (c) 2012 Alejandro Martinez. All rights reserved.

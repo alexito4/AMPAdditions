@@ -1,6 +1,6 @@
 //
 //  UIActionSheet+AMPAdditions.h
-//  walipa
+//   
 //
 //  Created by Alejandro Martinez on 02/10/12.
 //  Copyright (c) 2012 Alejandro Martinez. All rights reserved.
