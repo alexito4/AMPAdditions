@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   }
   s.source   = { 
   	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git', 
-  	:tag => '0.3' 
+  	:tag => '0.4' 
   	#:commit => 'ba32e99a2221e3a153c7148972febf4581855010'
   }
   s.platform = :ios
