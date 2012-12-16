@@ -26,4 +26,8 @@
 + (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue Alpha:(CGFloat)alpha;
 
 
+
+- (UIColor *)lighterColor;
+- (UIColor *)darkerColor;
+
 @end

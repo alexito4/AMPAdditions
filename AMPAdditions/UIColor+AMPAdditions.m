@@ -10,6 +10,8 @@
 
 @implementation UIColor (AMPAdditions)
 
+#pragma mark - Color creation
+
 + (UIColor *)randomColor
 {
     CGFloat red =  (CGFloat)random()/(CGFloat)RAND_MAX;
@@ -33,6 +35,30 @@
 + (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue Alpha:(CGFloat)alpha
 {
     return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha];
+}
+
+#pragma mark - Color manipulation
+
+- (UIColor *)lighterColor
+{
+    float h, s, b, a;
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a])
+        return [UIColor colorWithHue:h
+                          saturation:s
+                          brightness:MIN(b * 1.2, 1.0)
+                               alpha:a];
+    return nil;
+}
+
+- (UIColor *)darkerColor
+{
+    float h, s, b, a;
+    if ([self getHue:&h saturation:&s brightness:&b alpha:&a])
+        return [UIColor colorWithHue:h
+                          saturation:s
+                          brightness:b * 0.75
+                               alpha:a];
+    return nil;
 }
 
 @end
