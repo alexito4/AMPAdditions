@@ -11,24 +11,24 @@
 // Macros (radians, system version...)
 #import "AMPMacros.h"
 
-// Vendor
-#import "UIWebView+RemoveShadow.h"
-#import "NSDate-Utilities.h"
-//#import "UIImage+Resize.h"
-
-// UI
-#import "UIView+AMPAdditions.h"
-#import "UIImageView+AMPAdditions.h"
-#import "UIColor+AMPAdditions.h"
-#import "UIAlertView+AMPAdditions.h"
-#import "UIApplication+AMPAdditions.h"
-#import "UIAlertView+AMPAdditions.h"
-#import "UIActionSheet+AMPAdditions.h"
-
 #import "MKMapView+AMPAdditions.h"
 
-// NS
-#import "NSObject+AMPAdditions.h"
 #import "NSArray+AMPAdditions.h"
+#import "NSDate-Utilities.h"
+#import "NSObject+AMPAdditions.h"
+#import "NSUserDefaults+AMPAdditions.h"
+
+#import "UIActionSheet+AMPAdditions.h"
+//#import "UIAlertView+AMPAdditions.h"
+#import "UIApplication+AMPAdditions.h"
+#import "UIColor+AMPAdditions.h"
+#import "UIDevice+AMPAdditions.h"
+#import "UIFont+AMPAdditions.h"
+#import "UIImageView+AMPAdditions.h"
+#import "UINavigationController+AMPAdditions.h"
+#import "UISplitViewController+AMPAdditions.h"
+#import "UITableView+AMPAdditions.h"
+#import "UIView+AMPAdditions.h"
+#import "UIWebView+RemoveShadow.h"
 
 #endif
