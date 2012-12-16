@@ -18,8 +18,8 @@
 #import "NSObject+AMPAdditions.h"
 #import "NSUserDefaults+AMPAdditions.h"
 
-#import "UIActionSheet+AMPAdditions.h"
-//#import "UIAlertView+AMPAdditions.h"
+//#import "UIActionSheet+AMPAdditions.h"
+#import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"
 #import "UIColor+AMPAdditions.h"
 #import "UIDevice+AMPAdditions.h"
