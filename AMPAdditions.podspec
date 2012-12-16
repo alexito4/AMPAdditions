@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AMPAdditions'
-  s.version  = '0.3'
+  s.version  = '0.4'
   s.license  = 'MIT'
   s.summary  = 'UIKit Additions: some categories for improve the iOS Development.'
   s.homepage = 'https://github.com/alexito4/UIKit-AMPAdditions'
