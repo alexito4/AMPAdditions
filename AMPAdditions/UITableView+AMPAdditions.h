@@ -14,4 +14,6 @@
 
 - (CGFloat)heightForSection:(NSInteger)section;;
 
+- (CGSize)totalSize;
+
 @end
