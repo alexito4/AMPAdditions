@@ -8,12 +8,43 @@
 
 #import "UIView+AMPAdditions.h"
 
+@implementation CAGradientLayer (AMPAdditionsGradient)
+
++ (CAGradientLayer *)gradientWithTopColor:(UIColor *)top bottomColor:(UIColor *)bottom {
+    NSArray *colors = [NSArray arrayWithObjects:(id)top.CGColor, bottom.CGColor, nil];
+    
+    NSNumber *stopOne = [NSNumber numberWithFloat:0.0];
+    NSNumber *stopTwo = [NSNumber numberWithFloat:1.0];
+    
+    NSArray *locations = [NSArray arrayWithObjects:stopOne, stopTwo, nil];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.colors = colors;
+    gradient.locations = locations;
+    
+    return gradient;
+}
+
+@end
+
 @implementation UIView (AMPAdditions)
 
 - (void)removeAllSubviews {
     for (UIView *subview in [self subviews]) {
         [subview removeFromSuperview];
     }
+}
+
+#pragma mark - Gradients
+
+- (void)setBackgroundGradient:(CAGradientLayer *)gradient {
+    [self.layer insertSublayer:gradient atIndex:0];
+}
+
+- (void)setBackgroundGradientWithTopColor:(UIColor *)top bottomColor:(UIColor *)bottom {
+    CAGradientLayer *gradient = [CAGradientLayer gradientWithTopColor:top bottomColor:bottom];
+    gradient.frame = self.bounds;
+    [self setBackgroundGradient:gradient];
 }
 
 #pragma mark - Frame manipulation

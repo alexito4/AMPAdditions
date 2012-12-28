@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface UIView (AMPAdditions)
 
+// Helper methods
 - (void)removeAllSubviews;
+
+// Gradients
+- (void)setBackgroundGradient:(CAGradientLayer *)gradient;
+- (void)setBackgroundGradientWithTopColor:(UIColor *)top bottomColor:(UIColor *)bottom;
 
 // Frame manipulation
 @property CGPoint position;
