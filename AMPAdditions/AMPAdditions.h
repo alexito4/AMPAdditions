@@ -8,8 +8,10 @@
 
 #ifdef __OBJC__
 
-// Macros (radians, system version...)
-#import "AMPMacros.h"
+
+#import "AMPMacros.h" // Macros (radians, system version...)
+
+#import "AMPViewController.h"
 
 #import "MKMapView+AMPAdditions.h"
 
