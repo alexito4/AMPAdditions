@@ -10,6 +10,9 @@ Pod::Spec.new do |s|
   s.source   = { 
   	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git'
   }
+  
+  s.dependency = 'BlocksKit', '~> 1.8.1'
+
   s.platform = :ios
   s.source_files = 'AMPAdditions/'
   s.requires_arc = true
