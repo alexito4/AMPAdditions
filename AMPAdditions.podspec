@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name     = 'AMPAdditions'
-  s.version  = '0.5'
+  s.version  = '0.6'
   s.license  = 'MIT'
-  s.summary  = 'UIKit Additions: some categories for improve the iOS Development.'
+  s.summary  = 'AMPAdditions: some categories for improve the iOS Development.'
   s.homepage = 'https://github.com/alexito4/UIKit-AMPAdditions'
   s.authors  = {
   	'Alejandro Martinez' => 'alexito4@gmail.com'
