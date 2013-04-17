@@ -8,9 +8,7 @@ Pod::Spec.new do |s|
   	'Alejandro Martinez' => 'alexito4@gmail.com'
   }
   s.source   = { 
-  	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git', 
-  	:tag => '0.5' 
-  	#:commit => 'ba32e99a2221e3a153c7148972febf4581855010'
+  	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git'
   }
   s.platform = :ios
   s.source_files = 'AMPAdditions/'
