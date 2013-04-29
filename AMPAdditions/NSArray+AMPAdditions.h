@@ -15,6 +15,9 @@
  */
 - (id)firstObject;
 
+
+- (BOOL)isEmpty;
+
 /**
  * Returns a NSMutableArray with the same content of the original array.
  */
