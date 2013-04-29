@@ -10,25 +10,9 @@
 
 
 #import "AMPMacros.h" // Macros (radians, system version...)
-
 #import "AMPViewController.h"
+#import "AMPCategories.h"
 
-#import "MKMapView+AMPAdditions.h"
-
-#import "NSArray+AMPAdditions.h"
-#import "NSDate-Utilities.h"
-#import "NSObject+AMPAdditions.h"
-#import "NSUserDefaults+AMPAdditions.h"
-
-#import "UIApplication+AMPAdditions.h"
-#import "UIColor+AMPAdditions.h"
-#import "UIDevice+AMPAdditions.h"
-#import "UIFont+AMPAdditions.h"
-#import "UIImageView+AMPAdditions.h"
-#import "UINavigationController+AMPAdditions.h"
-#import "UISplitViewController+AMPAdditions.h"
-#import "UITableView+AMPAdditions.h"
-#import "UIView+AMPAdditions.h"
-#import "UIWebView+RemoveShadow.h"
+#import "AMPColoredButton.h"
 
 #endif
