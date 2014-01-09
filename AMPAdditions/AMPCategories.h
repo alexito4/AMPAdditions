@@ -24,6 +24,7 @@
 #import "UISplitViewController+AMPAdditions.h"
 #import "UITableView+AMPAdditions.h"
 #import "UIView+AMPAdditions.h"
+#import "UIView+AMPAnimations.h"
 #import "UIWebView+RemoveShadow.h"
 
 #endif
