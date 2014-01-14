@@ -13,4 +13,8 @@
 // Performs a quick shake
 - (void)AMP_shake;
 
+- (void)AMP_spinAtInfinitum;
+- (void)AMP_spinAtInfinitumWithDuration:(CGFloat)duration;
+- (void)AMP_spinWithDuration:(CGFloat)duration numberOfRotations:(CGFloat)rotations andRepetitions:(CGFloat)repeatitions;
+
 @end

@@ -36,4 +36,23 @@
     [self.layer addAnimation:animation forKey:@"position"];
 }
 
+- (void)AMP_spinAtInfinitum {
+    [self AMP_spinAtInfinitumWithDuration:1];
+}
+
+- (void)AMP_spinAtInfinitumWithDuration:(CGFloat)duration {
+    [self AMP_spinWithDuration:duration numberOfRotations:1 andRepetitions:HUGE_VALF];
+}
+
+- (void)AMP_spinWithDuration:(CGFloat)duration numberOfRotations:(CGFloat)rotations andRepetitions:(CGFloat)repeatitions  {
+    CABasicAnimation *rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 * rotations * duration ];
+    rotationAnimation.duration = duration;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = repeatitions;
+    
+    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
 @end
