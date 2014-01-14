@@ -52,7 +52,11 @@
     rotationAnimation.cumulative = YES;
     rotationAnimation.repeatCount = repeatitions;
     
-    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    [self.layer addAnimation:rotationAnimation forKey:@"spin"];
+}
+
+- (void)AMP_stopSpinning {
+    [self.layer removeAnimationForKey:@"spin"];
 }
 
 @end

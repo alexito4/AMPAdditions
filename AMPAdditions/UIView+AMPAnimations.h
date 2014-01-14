@@ -16,5 +16,5 @@
 - (void)AMP_spinAtInfinitum;
 - (void)AMP_spinAtInfinitumWithDuration:(CGFloat)duration;
 - (void)AMP_spinWithDuration:(CGFloat)duration numberOfRotations:(CGFloat)rotations andRepetitions:(CGFloat)repeatitions;
-
+- (void)AMP_stopSpinning;
 @end
