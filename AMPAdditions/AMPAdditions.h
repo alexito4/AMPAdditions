@@ -14,5 +14,6 @@
 #import "AMPCategories.h"
 
 #import "AMPColoredButton.h"
+#import "AMPTriangleView.h"
 
 #endif
