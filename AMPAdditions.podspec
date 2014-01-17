@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.dependency 'BlocksKit', '~> 1.8.1'
 
   s.platform = :ios
-  s.source_files = 'AMPAdditions/*'
+  s.source_files = 'AMPAdditions/', 'AMPAdditions/**/*.{h,m}'
   s.requires_arc = true
 
   s.framework = 'MapKit', 'QuartzCore', 'CoreImage', 'CoreGraphics'
