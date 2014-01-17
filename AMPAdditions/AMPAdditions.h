@@ -18,5 +18,6 @@
 #import "AMPColoredButton.h"
 #import "AMPTriangleView.h"
 #import "AMPDisclousure.h"
+#import "AMPThinnestView.h"
 
 #endif
