@@ -25,15 +25,15 @@
     
     if ([self canOpenURL:url]) {
         NSString *message = [NSString stringWithFormat:NSLocalizedString(@"openPhoneAlert", @"openPhoneAlert"), phone];
-        UIAlertView *alert = [UIAlertView alertViewWithTitle:@"" message:message];
-        [alert addButtonWithTitle:NSLocalizedString(@"openPhoneYes", @"openPhoneYes") handler:^{
+        UIAlertView *alert = [UIAlertView bk_alertViewWithTitle:@"" message:message];
+        [alert bk_addButtonWithTitle:NSLocalizedString(@"openPhoneYes", @"openPhoneYes") handler:^{
             [self openURL:url];
         }];
-        [alert setCancelButtonWithTitle:NSLocalizedString(@"openPhoneNo", @"openPhoneNo") handler:nil];
+        [alert bk_setCancelButtonWithTitle:NSLocalizedString(@"openPhoneNo", @"openPhoneNo") handler:nil];
         [alert show];
     } else {
-        UIAlertView *alert = [UIAlertView alertViewWithTitle:@"" message:[NSString stringWithFormat:NSLocalizedString(@"openPhoneCantCall", @"openPhoneCantCall"), phone]];
-        [alert setCancelButtonWithTitle:NSLocalizedString(@"openPhoneNo", @"openPhoneNo") handler:nil];
+        UIAlertView *alert = [UIAlertView bk_alertViewWithTitle:@"" message:[NSString stringWithFormat:NSLocalizedString(@"openPhoneCantCall", @"openPhoneCantCall"), phone]];
+        [alert bk_setCancelButtonWithTitle:NSLocalizedString(@"openPhoneNo", @"openPhoneNo") handler:nil];
         [alert show];
     }
 }
