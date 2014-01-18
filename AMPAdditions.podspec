@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AMPAdditions'
-  s.version  = '0.6.3'
+  s.version  = '0.7'
   s.license  = 'MIT'
   s.summary  = 'AMPAdditions: some categories for improve the iOS Development.'
   s.homepage = 'https://github.com/alexito4/UIKit-AMPAdditions'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   	:git => 'https://github.com/alexito4/UIKit-AMPAdditions.git'
   }
 
-  s.dependency 'BlocksKit', '~> 2.0.0'
+#  s.dependency 'BlocksKit', '~> 2.0.0'
 
   s.platform = :ios
   s.source_files = 'AMPAdditions/', 'AMPAdditions/**/*.{h,m}'
