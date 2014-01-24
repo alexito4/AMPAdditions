@@ -10,6 +10,8 @@
 
 @interface UIScrollView (AMPAdditions)
 
-@property (nonatomic, readonly) NSUInteger currentPage;
+- (NSUInteger)currentPage;
+- (void)setCurrentPage:(NSUInteger)currentPage; // animated = YES
+- (void)setCurrentPage:(NSUInteger)currentPage animated:(BOOL)animated;
 
 @end
