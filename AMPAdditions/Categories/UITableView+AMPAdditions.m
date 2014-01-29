@@ -34,4 +34,9 @@
     return CGSizeMake(width, height);
 }
 
+- (void)reloadRowAtIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)animation {
+    NSAssert(indexPath, @"indexPath can't be nil");
+    [self reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:animation];
+}
+
 @end

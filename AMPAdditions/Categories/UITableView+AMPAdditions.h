@@ -16,4 +16,6 @@
 
 - (CGSize)totalSize;
 
+- (void)reloadRowAtIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)animation;
+
 @end
