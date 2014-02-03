@@ -78,19 +78,6 @@
     }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-#pragma mark - Core Data
-
-- (NSManagedObjectContext *)managedObjectContext
-{
-    NSAssert(NO, @"You need to provide your own managedObjectContext by implementing this method");
-    return nil;
-}
-
 #pragma mark - Adjusting the view for the keyboard
 
 - (void)animateViewWithKeyboardUpDirection:(BOOL)up distance:(float)distance animationDuration:(NSTimeInterval)duration animationCurve:(UIViewAnimationCurve)curve
@@ -155,7 +142,7 @@
 - (void)dealloc
 {
 #if DEBUG
-	NSLog(@"[%@] dealloc:", NSStringFromClass([self class])); // Log each dealloc. Very useful for debugging.
+//	NSLog(@"[%@] dealloc:", NSStringFromClass([self class])); // Log each dealloc. Very useful for debugging.
 #endif
     
     

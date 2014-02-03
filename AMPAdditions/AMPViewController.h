@@ -10,9 +10,6 @@
 
 @interface AMPViewController : UIViewController
 
-/* Optional. Implement if you want to return a different managed object ctx other than the default given to you */
-- (NSManagedObjectContext *)managedObjectContext;
-
 // Called when the UIViewController will pop from the UINavigationViewController
 - (void)viewWillPop;
 
