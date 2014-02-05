@@ -18,4 +18,7 @@
 
 - (void)reloadRowAtIndexPath:(NSIndexPath *)indexPath withRowAnimation:(UITableViewRowAnimation)animation;
 
+// Register a nib with the 'nameAndIdentifier' name from the app bundle (nil)
+// using the 'nameAndIdentifier' as the reuse identifier.
+- (void)registerNibWithNameAndIdentifier:(NSString *)nameAndIdentifier;
 @end

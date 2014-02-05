@@ -39,4 +39,8 @@
     [self reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:animation];
 }
 
+- (void)registerNibWithNameAndIdentifier:(NSString *)nameAndIdentifier {
+    [self registerNib:[UINib nibWithNibName:nameAndIdentifier bundle:nil] forCellReuseIdentifier:nameAndIdentifier];
+}
+
 @end
