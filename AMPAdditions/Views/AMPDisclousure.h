@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Alejandro Martinez. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AMPTriangleView.h"
 
-@interface AMPDisclousure : UIView
+@interface AMPDisclousure : AMPTriangleView
 
 @end

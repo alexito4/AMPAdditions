@@ -9,6 +9,7 @@
 #import "AMPTriangleView.h"
 
 @implementation AMPTriangleView
+@dynamic inset, shouldFill, strokeWidth;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -28,7 +29,27 @@
 
 - (void)commonInit {
     [self setOpaque:NO];
-    _direction = AMPTriangleViewDirectionsTop;
+    _direction = [self defaultDirection];
+}
+
+- (AMPTriangleDirection)defaultDirection {
+    return AMPTriangleDirectionTop;
+}
+
+- (CGFloat)inset {
+    return 0.0f;
+}
+
+-(BOOL)shouldStroke {
+    return self.strokeWidth > 0.0f;
+}
+
+- (BOOL)shouldFill {
+    return YES;
+}
+
+- (CGFloat)strokeWidth {
+    return 0.0f;
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -36,35 +57,53 @@
     
     CGContextBeginPath(ctx);
     
+    CGFloat inset = [self inset];
+    
+    CGFloat minX = CGRectGetMinX(rect) + inset;
+    CGFloat midX = CGRectGetMidX(rect);
+    CGFloat maxX = CGRectGetMaxX(rect) - inset;
+    
+    CGFloat minY = CGRectGetMinY(rect) + inset;
+    CGFloat midY = CGRectGetMidY(rect);
+    CGFloat maxY = CGRectGetMaxY(rect) - inset;
+    
     switch (self.direction) {
-        case AMPTriangleViewDirectionsTop:
-            CGContextMoveToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));
+        case AMPTriangleDirectionTop:
+            CGContextMoveToPoint(ctx, minX, maxY);
+            CGContextAddLineToPoint(ctx, midX, minY);
+            CGContextAddLineToPoint(ctx, maxX, maxY);
             break;
-        case AMPTriangleViewDirectionsBottom:
-            CGContextMoveToPoint(ctx, CGRectGetMinX(rect), CGRectGetMinY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMaxY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMinY(rect));
+        case AMPTriangleDirectionBottom:
+            CGContextMoveToPoint(ctx, minX, minY);
+            CGContextAddLineToPoint(ctx, midX, maxY);
+            CGContextAddLineToPoint(ctx, maxX, minY);
             break;
-        case AMPTriangleViewDirectionsLeft:
-            CGContextMoveToPoint(ctx, CGRectGetMinX(rect), CGRectGetMinY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMidY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));
+        case AMPTriangleDirectionLeft:
+            CGContextMoveToPoint(ctx, maxX, minY);
+            CGContextAddLineToPoint(ctx, minX, midY);
+            CGContextAddLineToPoint(ctx, maxX, maxY);
             break;
-        case AMPTriangleViewDirectionsRight:
-            CGContextMoveToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMinY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMidY(rect));
-            CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));
+        case AMPTriangleDirectionRight:
+            CGContextMoveToPoint(ctx, minX, minY);
+            CGContextAddLineToPoint(ctx, maxX, midY);
+            CGContextAddLineToPoint(ctx, minX, maxY);
             break;
         default:
             break;
     }
     
-    CGContextClosePath(ctx);
+    if ([self shouldStroke]) {
+        CGContextSetLineWidth(ctx, self.strokeWidth);
+        [self.tintColor setStroke];
+        CGContextStrokePath(ctx);
+    }
     
-    [self.tintColor setFill];
-    CGContextFillPath(ctx);
+//    CGContextClosePath(ctx);
+    
+    if ([self shouldFill]) {
+        [self.tintColor setFill];
+        CGContextFillPath(ctx);
+    }
 }
 
 - (void)tintColorDidChange {
@@ -76,7 +115,7 @@
     [self setNeedsDisplay];
 }
 
-- (void)setDirection:(AMPTriangleViewDirections)direction {
+- (void)setDirection:(AMPTriangleDirection)direction {
     _direction = direction;
     [self setNeedsDisplay];
 }

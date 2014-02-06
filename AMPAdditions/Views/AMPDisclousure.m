@@ -13,41 +13,20 @@
     return [self initWithFrame:CGRectMake(0.0f, 0.0f, 6.0f, 15.0f)];
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self commonInit];
-    }
-    return self;
+- (AMPTriangleDirection)defaultDirection {
+    return AMPTriangleDirectionRight;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self commonInit];
-    }
-    return self;
+- (CGFloat)inset {
+    return 1.0f;
 }
 
-- (void)commonInit {
-    [self setOpaque:NO];
+- (CGFloat)strokeWidth {
+    return 2.0f;
 }
 
-- (void)drawRect:(CGRect)rect {
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    
-    CGContextBeginPath(ctx);
-    
-    CGFloat inset = 1.0f;
-    CGContextMoveToPoint(ctx, CGRectGetMinX(rect) + inset, CGRectGetMinY(rect) + inset);
-    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect) - inset, CGRectGetMidY(rect));
-    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect) + inset, CGRectGetMaxY(rect) - inset);
-    
-    CGContextSetLineWidth(ctx, 2.0f);
-    
-    [self.tintColor setStroke];
-    CGContextStrokePath(ctx);
+- (BOOL)shouldFill {
+    return NO;
 }
 
 @end

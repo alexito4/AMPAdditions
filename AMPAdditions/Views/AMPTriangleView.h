@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, AMPTriangleViewDirections) {
-    AMPTriangleViewDirectionsTop,    // ^
-    AMPTriangleViewDirectionsBottom, // V
-    AMPTriangleViewDirectionsLeft,   // <
-    AMPTriangleViewDirectionsRight   // >
+typedef NS_ENUM(NSInteger, AMPTriangleDirection) {
+    AMPTriangleDirectionTop,    // ^
+    AMPTriangleDirectionBottom, // V
+    AMPTriangleDirectionLeft,   // <
+    AMPTriangleDirectionRight   // >
 };
 
 @interface AMPTriangleView : UIView
 
-@property (nonatomic) AMPTriangleViewDirections direction;
+@property (nonatomic) AMPTriangleDirection direction;
+
+@property (nonatomic, readonly) CGFloat inset;
+@property (nonatomic, readonly) BOOL shouldFill;
+@property (nonatomic, readonly) CGFloat strokeWidth;
 
 @end
