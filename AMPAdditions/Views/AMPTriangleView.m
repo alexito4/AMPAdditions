@@ -27,6 +27,7 @@
 }
 
 - (void)commonInit {
+    [self setOpaque:NO];
     _direction = AMPTriangleViewDirectionsTop;
 }
 
