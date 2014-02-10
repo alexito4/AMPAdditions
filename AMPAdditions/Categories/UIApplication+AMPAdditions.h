@@ -16,4 +16,7 @@
 + (void)startActivityIndicator;
 + (void)stopActivityIndicator;
 
+- (BOOL)canOpenPhone:(NSString *)phone;
+- (BOOL)openPhone:(NSString *)phone;
+
 @end

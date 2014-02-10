@@ -18,4 +18,16 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
+- (NSURL *)urlForPhone:(NSString *)phone {
+    return [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phone]];
+}
+
+- (BOOL)canOpenPhone:(NSString *)phone {
+    return [self canOpenURL:[self urlForPhone:phone]];
+}
+
+- (BOOL)openPhone:(NSString *)phone {
+    return [self openURL:[self urlForPhone:phone]];
+}
+
 @end
