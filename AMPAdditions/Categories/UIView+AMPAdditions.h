@@ -30,6 +30,9 @@
 @property CGFloat centerX;
 @property CGFloat centerY;
 
+@property (nonatomic, readonly) CGFloat midX;
+@property (nonatomic, readonly) CGFloat midY;
+
 @property CGSize size;
 @property CGFloat width;
 @property CGFloat height;

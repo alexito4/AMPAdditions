@@ -149,6 +149,14 @@
     [self setCenter:center];
 }
 
+- (CGFloat)midX {
+    return CGRectGetMidX(self.bounds);
+}
+
+- (CGFloat)midY {
+    return CGRectGetMidY(self.bounds);
+}
+
 - (CGSize)size
 {
 	return self.frame.size;
