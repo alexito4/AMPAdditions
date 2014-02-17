@@ -21,6 +21,7 @@
 #import "UIDevice+AMPAdditions.h"
 #import "UIFont+AMPAdditions.h"
 #import "UIImageView+AMPAdditions.h"
+#import "UILabel+AMPAdditions.h"
 #import "UINavigationController+AMPAdditions.h"
 #import "UISplitViewController+AMPAdditions.h"
 #import "UITableView+AMPAdditions.h"
