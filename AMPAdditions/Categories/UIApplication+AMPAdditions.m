@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Alejandro Martinez. All rights reserved.
 //
 
+#import <AMPAdditions/UIAlertView+AMPAdditions.h>
 #import "UIApplication+AMPAdditions.h"
 
 @implementation UIApplication (AMPAdditions)
@@ -28,6 +29,20 @@
 
 - (BOOL)openPhone:(NSString *)phone {
     return [self openURL:[self urlForPhone:phone]];
+}
+
+- (void)openPhoneAsking:(NSString *)phone {
+    if ([self canOpenPhone:phone]) {
+        [UIAlertView showAlertViewWithTitle:NSLocalizedString(@"AMPPhoneTitle", @"Phone title")
+                                    message:[NSString stringWithFormat:NSLocalizedString(@"AMPPhoneMessage %@", @"phone %@"), phone]
+                          cancelButtonTitle:NSLocalizedString(@"AMPCancel", @"Cancel")
+                          otherButtonTitles:@[NSLocalizedString(@"AMPCallButton", @"Call title")]
+                            completionBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+                                if (buttonIndex != alertView.cancelButtonIndex) {
+                                    [self openPhone:phone];
+                                }
+                            }];
+    }
 }
 
 @end

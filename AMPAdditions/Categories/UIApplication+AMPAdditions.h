@@ -18,5 +18,6 @@
 
 - (BOOL)canOpenPhone:(NSString *)phone;
 - (BOOL)openPhone:(NSString *)phone;
+- (void)openPhoneAsking:(NSString *)phone;
 
 @end
