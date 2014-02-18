@@ -10,11 +10,6 @@
 
 @implementation NSArray (AMPAdditions)
 
-- (id)firstObject
-{
-    return [self count] > 0 ? self[0] : nil;
-}
-
 - (BOOL)isEmpty {
     return self.count == 0;
 }

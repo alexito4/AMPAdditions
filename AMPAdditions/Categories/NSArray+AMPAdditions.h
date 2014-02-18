@@ -10,11 +10,6 @@
 
 @interface NSArray (AMPAdditions)
 
-/**
- * Returns the first object in the array or nil.
- */
-- (id)firstObject;
-
 
 - (BOOL)isEmpty;
 
