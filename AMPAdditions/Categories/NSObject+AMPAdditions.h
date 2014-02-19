@@ -12,4 +12,6 @@
 
 - (NSMutableDictionary *)extraInfo;
 
++ (NSString *)classString;
+
 @end

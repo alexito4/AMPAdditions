@@ -24,4 +24,8 @@
 	return objectUserInfo;
 }
 
++ (NSString *)classString {
+    return NSStringFromClass([self class]);
+}
+
 @end
