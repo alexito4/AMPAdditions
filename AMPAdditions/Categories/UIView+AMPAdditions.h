@@ -14,6 +14,15 @@
 // Helper methods
 - (void)removeAllSubviews;
 
+/**
+ *
+ *  @param touch <#touch description#>
+ *  @param view  Usually a subivew of self
+ *
+ *  @return Returns YES if the touch was inside the view.
+ */
+- (BOOL)touch:(UITouch *)touch insideView:(UIView *)view;
+
 // Gradients
 - (void)setBackgroundGradient:(CAGradientLayer *)gradient;
 - (void)setBackgroundGradientWithTopColor:(UIColor *)top bottomColor:(UIColor *)bottom;

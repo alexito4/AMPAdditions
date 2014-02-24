@@ -35,6 +35,11 @@
     }
 }
 
+- (BOOL)touch:(UITouch *)touch insideView:(UIView *)view {
+    CGPoint location = [touch locationInView:self];
+    return [view pointInside:[view convertPoint:location fromView:self] withEvent:nil];
+}
+
 #pragma mark - Gradients
 
 - (void)setBackgroundGradient:(CAGradientLayer *)gradient {
