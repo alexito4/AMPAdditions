@@ -13,11 +13,6 @@
 
 @implementation UIImageView (AMPAdditions)
 
-- (void)makeCircle {
-    self.layer.cornerRadius = roundf(self.frame.size.width/2.0);
-    self.layer.masksToBounds = YES;
-}
-
 - (void)makeCircleAndShadow {
     
     // need to make the operations in other imageview because the self.layer is readonly

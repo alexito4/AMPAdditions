@@ -38,6 +38,9 @@
 - (BOOL)touch:(UITouch *)touch insideView:(UIView *)view {
     CGPoint location = [touch locationInView:self];
     return [view pointInside:[view convertPoint:location fromView:self] withEvent:nil];
+- (void)makeCircle {
+    self.layer.cornerRadius = roundf(self.frame.size.width/2.0);
+    self.layer.masksToBounds = YES;
 }
 
 #pragma mark - Gradients

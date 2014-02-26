@@ -10,7 +10,7 @@
 
 @interface UIImageView (AMPAdditions)
 
-- (void)makeCircle;
+
 - (void)makeCircleAndShadow;
 
 - (void)makeBlackAndWhite;

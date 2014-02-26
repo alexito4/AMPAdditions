@@ -22,6 +22,7 @@
  *  @return Returns YES if the touch was inside the view.
  */
 - (BOOL)touch:(UITouch *)touch insideView:(UIView *)view;
+- (void)makeCircle;
 
 // Gradients
 - (void)setBackgroundGradient:(CAGradientLayer *)gradient;
