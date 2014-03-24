@@ -19,3 +19,7 @@
 
 #define degreesToRadians( degrees ) ( ( degrees ) / 180.0 * M_PI )
 #define radiansToDegrees( radians ) ( ( radians ) * ( 180.0 / M_PI ) )
+
+#pragma mark -
+
+#define pixelsToPoints(pixels) (pixels/[UIScreen mainScreen].scale)
