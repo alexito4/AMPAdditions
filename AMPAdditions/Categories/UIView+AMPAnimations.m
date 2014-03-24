@@ -56,7 +56,13 @@
 }
 
 - (void)AMP_stopSpinning {
-    [self.layer removeAnimationForKey:@"spin"];
+    CABasicAnimation *animation = [[self.layer animationForKey:@"spin"] copy];
+    animation.fromValue = [self.layer.presentationLayer valueForKeyPath:@"transform.rotation.z"];
+    animation.repeatCount = 0;
+    animation.duration = 0.45f;
+    animation.removedOnCompletion = YES;
+    [self.layer addAnimation:animation forKey:@"spin"];
+//    [self.layer removeAnimationForKey:@"spin"];
 }
 
 @end
