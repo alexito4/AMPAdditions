@@ -28,6 +28,7 @@
 #import "UINavigationController+AMPAdditions.h"
 #import "UISplitViewController+AMPAdditions.h"
 #import "UITableView+AMPAdditions.h"
+#import "UICollectionView+AMPAdditions.h"
 #import "UIView+AMPAdditions.h"
 #import "UIView+AMPAnimations.h"
 #import "UIView+AMPBorders.h"
