@@ -21,6 +21,7 @@
 #import "UIColor+AMPAdditions.h"
 #import "UIDevice+AMPAdditions.h"
 #import "UIFont+AMPAdditions.h"
+#import "UIImage+AMPAdditions.h"
 #import "UIImageView+AMPAdditions.h"
 #import "UILabel+AMPAdditions.h"
 #import "UINavigationController+AMPAdditions.h"
