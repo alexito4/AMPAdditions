@@ -19,12 +19,13 @@
 
 /**
  *
- *  @param touch <#touch description#>
- *  @param view  Usually a subivew of self
+ *  @param touch Touch in self
+ *  @param view  Subivew of self
  *
- *  @return Returns YES if the touch was inside the view.
+ *  @return Returns YES if the touch was inside the subview.
  */
-- (BOOL)touch:(UITouch *)touch insideView:(UIView *)view;
+- (BOOL)touch:(UITouch *)touch insideSubview:(UIView *)subview;
+
 - (void)makeCircle;
 
 // Gradients

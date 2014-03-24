@@ -35,7 +35,6 @@
     }
 }
 
-- (BOOL)touch:(UITouch *)touch insideView:(UIView *)view {
 - (UIView *)viewWithClass:(Class)aClass {
     for (UIView *v in self.subviews) {
         if ([v isKindOfClass:aClass]) {
@@ -46,8 +45,12 @@
     }
     return nil;
 }
+
+- (BOOL)touch:(UITouch *)touch insideSubview:(UIView *)subview {
     CGPoint location = [touch locationInView:self];
-    return [view pointInside:[view convertPoint:location fromView:self] withEvent:nil];
+    return [subview pointInside:[subview convertPoint:location fromView:self] withEvent:nil];
+}
+
 - (void)makeCircle {
     self.layer.cornerRadius = roundf(self.frame.size.width/2.0);
     self.layer.masksToBounds = YES;
