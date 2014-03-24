@@ -6,11 +6,17 @@
 //
 
 #import "AMPThinnestView.h"
+#import "AMPMacros.h"
+#import "UIView+AMPAdditions.h"
 
 @implementation AMPThinnestView
 
++ (AMPThinnestView *)horizontalAtBottomOfView:(UIView *)view withColor:(UIColor *)color {
+    return [self horizontalView:view.width atY:view.bottom - pixelsToPoints(1.0f) withColor:color];
+}
+
 + (AMPThinnestView *)horizontalView:(CGFloat)width atY:(CGFloat)y withColor:(UIColor *)color {
-    AMPThinnestView *v = [[self alloc] initWithFrame:CGRectMake(0.0f, y, width, 1.0f/[UIScreen mainScreen].scale)];
+    AMPThinnestView *v = [[self alloc] initWithFrame:CGRectMake(0.0f, y, width, pixelsToPoints(1.0f))];
     [v setBackgroundColor:color];
     return v;
 }

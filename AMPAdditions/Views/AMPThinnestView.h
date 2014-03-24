@@ -10,6 +10,8 @@
 
 @interface AMPThinnestView : UIView
 
++ (AMPThinnestView *)horizontalAtBottomOfView:(UIView *)view withColor:(UIColor *)color;
+
 + (AMPThinnestView *)horizontalView:(CGFloat)width atY:(CGFloat)y withColor:(UIColor *)color;
 
 @end
