@@ -37,7 +37,22 @@
     return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:alpha];
 }
 
++ (UIColor *)colorForHuePercentage:(CGFloat)percentage {
+    return [self colorForHuePercentage:percentage betweenMin:0.0f andMax:360.0f];
+}
+
++ (UIColor *)colorForHuePercentage:(CGFloat)percentage betweenMin:(CGFloat)min andMax:(CGFloat)max {
+    CGFloat hue = min + ((max - min) * percentage / 100);
+    UIColor *color = [UIColor colorWithHue:1.0 * hue / 360.0
+                                saturation:1.0
+                                brightness:1.0
+                                     alpha:1.0];
+    return color;
+}
+
 #pragma mark - Color manipulation
+
+
 
 - (UIColor *)lighterColor
 {
