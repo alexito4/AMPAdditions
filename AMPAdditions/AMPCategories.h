@@ -15,6 +15,7 @@
 #import "NSObject+AMPAdditions.h"
 #import "NSUserDefaults+AMPAdditions.h"
 #import "NSString+Encode.h"
+#import "NSString+AMPAdditions.h"
 
 #import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"
