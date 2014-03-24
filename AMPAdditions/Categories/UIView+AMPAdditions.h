@@ -14,6 +14,9 @@
 // Helper methods
 - (void)removeAllSubviews;
 
+// Finds the first subview in the self hierarchy that matches the class param.
+- (UIView *)viewWithClass:(Class)aClass;
+
 /**
  *
  *  @param touch <#touch description#>

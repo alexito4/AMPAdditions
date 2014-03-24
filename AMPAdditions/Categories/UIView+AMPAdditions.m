@@ -36,6 +36,16 @@
 }
 
 - (BOOL)touch:(UITouch *)touch insideView:(UIView *)view {
+- (UIView *)viewWithClass:(Class)aClass {
+    for (UIView *v in self.subviews) {
+        if ([v isKindOfClass:aClass]) {
+            return v;
+        } else {
+            return [v viewWithClass:aClass];
+        }
+    }
+    return nil;
+}
     CGPoint location = [touch locationInView:self];
     return [view pointInside:[view convertPoint:location fromView:self] withEvent:nil];
 - (void)makeCircle {
