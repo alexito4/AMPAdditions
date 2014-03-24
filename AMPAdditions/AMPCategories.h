@@ -32,6 +32,7 @@
 #import "UIView+AMPAdditions.h"
 #import "UIView+AMPAnimations.h"
 #import "UIView+AMPBorders.h"
+#import "UIViewController+AMPAdditions.h"
 #import "UIWebView+RemoveShadow.h"
 #import "UIScrollView+AMPAdditions.h"
 
