@@ -23,3 +23,6 @@
 #pragma mark -
 
 #define pixelsToPoints(pixels) (pixels/[UIScreen mainScreen].scale)
+
+#define TICK NSDate *amp_tickStartTime = [NSDate date]
+#define TOCK NSLog(@"Elapsed time: %f", -[amp_tickStartTime timeIntervalSinceNow])
