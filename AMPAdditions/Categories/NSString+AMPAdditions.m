@@ -7,6 +7,7 @@
 //
 
 #import "NSString+AMPAdditions.h"
+#import "NSDateFormatter+Cache.h"
 
 @implementation NSString (AMPAdditions)
 
@@ -18,6 +19,15 @@
         [word appendString:letter];
     }
     return word;
+}
+
+- (NSDate *)dateWithFormat:(NSString *)format {
+    return [self dateWithFormat:format usingFormatter:[NSDateFormatter defaultFormatter]];
+}
+
+- (NSDate *)dateWithFormat:(NSString *)format usingFormatter:(NSDateFormatter *)formatter {
+    [formatter setDateFormat:format];
+    return [formatter dateFromString:self];
 }
 
 @end

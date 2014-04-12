@@ -16,6 +16,8 @@
 #import "NSUserDefaults+AMPAdditions.h"
 #import "NSString+Encode.h"
 #import "NSString+AMPAdditions.h"
+#import "NSDate+AMPAdditions.h"
+#import "NSDateFormatter+Cache.h"
 
 #import "UIAlertView+AMPAdditions.h"
 #import "UIApplication+AMPAdditions.h"

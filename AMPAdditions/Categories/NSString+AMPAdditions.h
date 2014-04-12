@@ -12,4 +12,7 @@
 
 + (NSString *)amp_randomString;
 
+- (NSDate *)dateWithFormat:(NSString *)format;
+- (NSDate *)dateWithFormat:(NSString *)format usingFormatter:(NSDateFormatter *)formatter;
+
 @end
