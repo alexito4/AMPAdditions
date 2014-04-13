@@ -14,4 +14,6 @@
 
 + (NSString *)classString;
 
+- (void)amp_logIvars;
+
 @end
