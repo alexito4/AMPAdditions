@@ -72,10 +72,19 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
+    // Pop
+    if (!self.navigationController) {
+        [self viewDidPop];
+    }
+    
     if (_shouldListenForKeyboardNotifications) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
     }
+}
+
+- (void)viewDidPop {
+    // implement your code in a subclass
 }
 
 #pragma mark - Adjusting the view for the keyboard

@@ -13,6 +13,8 @@
 // Called when the UIViewController will pop from the UINavigationViewController
 - (void)viewWillPop;
 
+- (void)viewDidPop;
+
 #pragma mark - Keyboard Management. Implement the needed
 /* View resizing auto management with keyboard notifications */
 - (void)registerForKeyboardNotifications; // You should call this in -setUp
