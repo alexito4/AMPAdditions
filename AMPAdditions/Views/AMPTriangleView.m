@@ -29,6 +29,7 @@
 
 - (void)commonInit {
     [self setOpaque:NO];
+    [self setContentMode:UIViewContentModeRedraw];
     _direction = [self defaultDirection];
 }
 
