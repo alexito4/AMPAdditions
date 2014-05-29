@@ -40,7 +40,10 @@
         if ([v isKindOfClass:aClass]) {
             return v;
         } else {
-            return [v viewWithClass:aClass];
+            UIView *r = [v viewWithClass:aClass];
+            if (r) {
+                return r;
+            }
         }
     }
     return nil;
