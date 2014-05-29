@@ -45,4 +45,16 @@
     }
 }
 
+- (NSString *)marketingVersion {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
+- (NSString *)buildVersion {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
+
+- (NSString *)displayName {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+}
+
 @end

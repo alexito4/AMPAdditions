@@ -20,4 +20,8 @@
 - (BOOL)openPhone:(NSString *)phone;
 - (void)openPhoneAsking:(NSString *)phone;
 
+- (NSString *)marketingVersion;
+- (NSString *)buildVersion;
+- (NSString *)displayName;
+
 @end
