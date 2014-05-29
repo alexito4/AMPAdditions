@@ -1,5 +1,5 @@
 //
-//  SColoredButton.m
+//  AMPColoredButton.m
 //  AMPAdditions
 //
 //  Created by Alejandro Martínez on 25/10/12.
@@ -7,6 +7,14 @@
 //
 
 #import "AMPColoredButton.h"
+
+#define GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(PROPERTY, TYPE, SETTER) \
+- (void)SETTER:(TYPE)PROPERTY { \
+if (_##PROPERTY != PROPERTY) { \
+_##PROPERTY = PROPERTY; \
+[self updateStyle]; \
+} \
+}
 
 @implementation AMPColoredButton
 
@@ -37,36 +45,75 @@
 }
 
 - (void)commonInit {
-    [self addTarget:self action:@selector(didTap:) forControlEvents:UIControlEventTouchDown];
-    [self addTarget:self action:@selector(didUntap:) forControlEvents:UIControlEventTouchUpInside];
-    [self addTarget:self action:@selector(didUntap:) forControlEvents:UIControlEventTouchUpOutside];
+    _backgroundNormalColor = self.backgroundColor;
+    _borderNormalColor = [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)didMoveToWindow {
+    if (self.window) {
+        [self updateStyle];
+    }
 }
 
 - (void)setEnabled:(BOOL)enabled {
     [super setEnabled:enabled];
     
-    if (enabled) {
-        [self setAlpha:1.0];
-    } else {
-        [self setAlpha:0.8];
+    [self updateStyle];
+}
+
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+    
+    [self updateStyle];
+}
+
+- (void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    
+    [self updateStyle];
+}
+
+- (void)updateStyle {
+    if (!self.enabled) {
+        if (self.backgroundDisabledColor) {
+            [self setBackgroundColor:self.backgroundDisabledColor];
+        }
+        if (self.borderDisabledColor) {
+            [self.layer setBorderColor:self.borderDisabledColor.CGColor];
+        }
+    }
+    else if (self.selected) {
+        if (self.backgroundSelectedColor) {
+            [self setBackgroundColor:self.backgroundSelectedColor];
+        }
+        if (self.borderSelectedColor) {
+            [self.layer setBorderColor:self.borderSelectedColor.CGColor];
+        }
+    }
+    else if (self.highlighted) {
+        if (self.backgroundHighlightedColor) {
+            [self setBackgroundColor:self.backgroundHighlightedColor];
+        }
+        if (self.borderHighlightedColor) {
+            [self.layer setBorderColor:self.borderHighlightedColor.CGColor];
+        }
+    }
+    else {
+        [self setBackgroundColor:self.backgroundNormalColor];
+        [self.layer setBorderColor:self.borderNormalColor.CGColor];
     }
 }
 
 #pragma mark - Custom Setter
 
-- (void)setBackgroundNormalColor:(UIColor *)backgroundNormalColor {
-    [self setBackgroundColor:backgroundNormalColor];
-    _backgroundNormalColor = backgroundNormalColor;
-}
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(backgroundNormalColor, UIColor *, setBackgroundNormalColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(backgroundHighlightedColor, UIColor *, setBackgroundHighlightedColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(backgroundSelectedColor, UIColor *, setBackgroundSelectedColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(backgroundDisabledColor, UIColor *, setBackgroundDisabledColor);
 
-#pragma mark - Actions
-
-- (void)didTap:(UIButton *)sender {
-    [self setBackgroundColor:_backgroundHighlightedColor];
-}
-
-- (void)didUntap:(UIButton *)sender {
-    [self setBackgroundColor:_backgroundNormalColor];
-}
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(borderNormalColor, UIColor *, setBorderNormalColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(borderDisabledColor, UIColor *, setBorderDisabledColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(borderHighlightedColor, UIColor *, setBorderHighlightedColor);
+GENERATE_AMPColoredButton_UPDATESTYLE_SETTER(borderSelectedColor, UIColor *, setBorderSelectedColor);
 
 @end
