@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+BOOL RSIsEmpty(id obj);
+
 @interface NSObject (AMPAdditions)
 
 - (NSMutableDictionary *)extraInfo;

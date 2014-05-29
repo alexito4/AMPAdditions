@@ -9,6 +9,10 @@
 #import "NSObject+AMPAdditions.h"
 #import <objc/runtime.h>
 
+BOOL RSIsEmpty(id obj) {
+	return obj == nil || obj == [NSNull null] || ([obj respondsToSelector:@selector(length)] && [(NSData *)obj length] == 0) || ([obj respondsToSelector:@selector(count)] && [obj count] == 0);
+}
+
 @implementation NSObject (AMPAdditions)
 
 - (NSMutableDictionary *)extraInfo {

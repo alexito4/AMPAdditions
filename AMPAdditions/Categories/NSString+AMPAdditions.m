@@ -9,6 +9,11 @@
 #import "NSString+AMPAdditions.h"
 #import "NSDateFormatter+Cache.h"
 
+BOOL AMPStringIsEmpty(NSString *s) {
+    /*22 Feb. 2011: added NSNull check. JSON parser can put a null where we expect a string, and NSNull throws an exception when checking length. Since [NSNull null] is, arguably, emptiness, it makes sense to include it.*/
+	return s == nil || (id)s == (id)[NSNull null] || [s length] == 0;
+}
+
 @implementation NSString (AMPAdditions)
 
 + (NSString *)amp_randomString {

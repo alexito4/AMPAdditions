@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+BOOL AMPStringIsEmpty(NSString *s);
+
 @interface NSString (AMPAdditions)
 
 + (NSString *)amp_randomString;
