@@ -14,4 +14,7 @@
 - (void)setCurrentPage:(NSUInteger)currentPage; // animated = YES
 - (void)setCurrentPage:(NSUInteger)currentPage animated:(BOOL)animated;
 
+- (void)scrollToCaretPosition:(UITextView *)textView;
+- (BOOL)rectVisible:(CGRect)rect;
+
 @end

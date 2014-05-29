@@ -24,4 +24,23 @@
     [self setContentOffset:CGPointMake(currentPage * CGRectGetWidth(self.bounds), 0.0f) animated:animated];
 }
 
+- (void)scrollToCaretPosition:(UITextView *)textView {
+    CGRect cursorRect = [textView caretRectForPosition:textView.selectedTextRange.start];
+    cursorRect = [self convertRect:cursorRect fromView:textView];
+    if (![self rectVisible:cursorRect]) {
+        cursorRect.size.height += 8; // To add some space underneath the cursor
+        [self scrollRectToVisible:cursorRect animated:YES];
+    }
+}
+
+- (BOOL)rectVisible:(CGRect)rect {
+    CGRect visibleRect;
+    visibleRect.origin = self.contentOffset;
+    visibleRect.origin.y += self.contentInset.top;
+    visibleRect.size = self.bounds.size;
+    visibleRect.size.height -= self.contentInset.top + self.contentInset.bottom;
+    
+    return CGRectContainsRect(visibleRect, rect);
+}
+
 @end
