@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AMPAdditions'
-  s.version  = '0.10.1'
+  s.version  = '0.10.2'
   s.summary  = 'AMPAdditions: some categories and classes for improve the iOS Development.'
   s.homepage = 'https://github.com/alexito4/AMPAdditions'
   s.author       = { "Alejandro Martínez" => "alexito4@gmail.com" }
