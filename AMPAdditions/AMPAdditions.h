@@ -19,5 +19,6 @@
 #import "AMPTriangleView.h"
 #import "AMPDisclousure.h"
 #import "AMPThinnestView.h"
+#import "AMPImagePickerManager.h"
 
 #endif
